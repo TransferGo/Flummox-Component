@@ -20,19 +20,21 @@ function addFluxContext(component) {
  */
 function addActions(component) {
 
-    const oldActions = component.actions;
-    const oldWillMount = component.componentWillMount;
+    var oldActions = component.actions;
+    var oldWillMount = component.componentWillMount;
 
     if (oldActions) {
         component.componentWillMount = function() {
 
             this.actions = {};
-            for (var i=0; i < oldActions.length; i++) {
-                const name = oldActions[i];
+
+            for (var i = 0; i < oldActions.length; i++) {
+                var name = oldActions[i];
+
                 this.actions[name] = this.context.flux.getActions(name);
             }
 
-            return oldWillMount && oldWillMount.apply(this, arguments);
+            return oldWillMount && oldWillMount.apply(this, arguments);
         };
     }
 
@@ -40,7 +42,7 @@ function addActions(component) {
 }
 
 /**
- *  Automaticly connects React component to Flummox stores and actions.
+ *  Automatically connects React component to Flummox stores and actions.
  */
 module.exports = function(displayName, innerComponent) {
 
