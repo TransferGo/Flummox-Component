@@ -1,0 +1,24 @@
+{
+  "name": "flummox-component",
+  "version": "0.1.0",
+  "description": "A simple way to connect React components to flummox stores and actions",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/TransferGo/Flummox-Component.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "flummox",
+    "flux",
+    "react",
+    "reactjs",
+    "component",
+    "stores",
+    "actions"
+  ],
+  "author": "TransferGo Ltd",
+  "license": "MIT"
+}
