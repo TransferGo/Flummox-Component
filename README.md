@@ -14,9 +14,9 @@ ES6+ way:
 
 ```js
 import React from 'react';
-import flummoxComponent from 'flummox-component';
+import fComponent from 'flummox-component';
 
-export default tgComponent('ComponentName', {
+export default fComponent('ComponentName', {
     
     actions: ['exampleActions', 'myActions'],
     
@@ -45,9 +45,9 @@ ES5 way:
 
 ```js
 var React = require('react');
-var flummoxComponent = require('flummox-component');
+var fComponent = require('flummox-component');
 
-module.exports = tgComponent('ComponentName', {
+module.exports = fComponent('ComponentName', {
     
     actions: ['exampleActions', 'myActions'],
     
