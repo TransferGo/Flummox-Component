@@ -1,6 +1,6 @@
 {
   "name": "flummox-component",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "A simple way to connect React components to flummox stores and actions",
   "main": "index.js",
   "repository": {

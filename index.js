@@ -1,6 +1,10 @@
 var React = require('react');
 var connectToStores = require('flummox/connect');
 
+if (connectToStores.default && !(connectToStores instanceof Function)) {
+    connectToStores = connectToStores.default;
+}
+
 /**
  *  Adds flux context if someone forgot it:
  */
